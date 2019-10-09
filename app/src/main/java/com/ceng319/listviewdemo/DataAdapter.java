@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-// TODO 3: Create the arrayadapter to hold the data finished
+// TODO 3: Create the DataAdapter to hold the data finished
 
 public class DataAdapter extends ArrayAdapter {
 
