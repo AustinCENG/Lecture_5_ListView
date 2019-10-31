@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_detail">
 
     <TextView
-        android:id="@+id/detailPage"
+        android:id="@+id/population"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -22,6 +22,21 @@
         app:layout_constraintHorizontal_bias="0.737"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailPage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/population_of_the_country"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailPage2" />
 
     <ImageView
         android:id="@+id/imagedetails"

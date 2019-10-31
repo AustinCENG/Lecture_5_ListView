@@ -50,7 +50,7 @@ public class DataAdapter extends ArrayAdapter {
 
         InputStream inputStream = null;
         try {
-            String imageFile = item.getImage();
+            String imageFile = item.getFlagimage();
             // File operations, need to get the image from asset files.
             inputStream = getContext().getAssets().open(imageFile);
             Drawable d = Drawable.createFromStream(inputStream, null);

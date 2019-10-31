@@ -13,10 +13,21 @@ public class DataItem {
     private String itemName;
     private String flagimage;
 
-    public DataItem(int itemId, String itemName, String flagimage) {
+    public String getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(String population) {
+        this.population = population;
+    }
+
+    private String population;
+
+    public DataItem(int itemId, String itemName, String flagimage, String population) {
         this.itemId = itemId;
         this.itemName = itemName;
         this.flagimage = flagimage;
+        this.population = population;
     }
 
     public int getItemId() {
@@ -35,22 +46,12 @@ public class DataItem {
         this.itemName = itemName;
     }
 
-
-
-    public String getImage() {
+    public String getFlagimage() {
         return flagimage;
     }
 
-    public void setImage(String image) {
-        this.flagimage = image;
+    public void setFlagimage(String flagimage) {
+        this.flagimage = flagimage;
     }
 
-    @Override
-    public String toString() {
-        return "DataItem{" +
-                "itemId='" + itemId + '\'' +
-                ", itemName='" + itemName + '\'' +
-                ", flagimage='" + flagimage + '\'' +
-                '}';
-    }
 }
