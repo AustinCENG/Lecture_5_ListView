@@ -9,26 +9,26 @@
     tools:showIn="@layout/activity_detail">
 
     <TextView
-        android:id="@+id/population"
+        android:id="@+id/detailPage"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text="@string/this_is_the_name_of_the_country"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/detailPage"
+        android:id="@+id/population"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="@string/population_of_the_country"
         android:textColor="@color/colorPrimary"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailPage2" />
+        app:layout_constraintTop_toBottomOf="@+id/detailPage" />
 
     <ImageView
         android:id="@+id/imagedetails"
@@ -48,8 +48,8 @@
         android:paddingTop="20dp"
         android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/detailPage"
+        app:layout_constraintEnd_toEndOf="@+id/population"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailPage" />
+        app:layout_constraintTop_toBottomOf="@+id/population" />
 
 </android.support.constraint.ConstraintLayout>
